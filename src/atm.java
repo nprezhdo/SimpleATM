@@ -13,7 +13,7 @@ public class atm {
 				}
 			}
 			if (!deposited) {
-				bankAccount newAccount = bankAccount(bankID);
+				bankAccount newAccount = new bankAccount(bankID);
 				bankAccounts.add(newAccount);
 			}
 		}
