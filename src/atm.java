@@ -15,6 +15,7 @@ public class atm {
 			if (!deposited) {
 				bankAccount newAccount = new bankAccount(bankID);
 				bankAccounts.add(newAccount);
+				newAccount.changeMoney(money);
 			}
 		}
 	}
