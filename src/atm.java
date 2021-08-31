@@ -4,6 +4,9 @@ public class atm {
 	private ArrayList<bankAccount> bankAccounts;
 	
 	public void deposit (String bankID, int money) {
+		if (money < 0) {
+			throw new IllegalArgumentException("dude you gotta put in money you cant take it out");
+		}
 		if (money > 0) {
 			boolean deposited = false;
 			for(int i =0; i< bankAccounts.size(); i++) {
@@ -18,6 +21,8 @@ public class atm {
 				newAccount.changeMoney(money);
 			}
 		}
+		
+		
 	}
 
 }
